@@ -35,11 +35,13 @@
     # Enable "Silent boot"
     plymouth.enable = true;
     consoleLogLevel = 3;
+	plymouth.theme = "solar";
     kernelParams = [
       "quiet"
       "rd.udev.log_level=3"
       "rd.systemd.show_status=auto"
     ];
+
 
     # SysRq
     kernel.sysctl."kernel.sysrq" = 1;
